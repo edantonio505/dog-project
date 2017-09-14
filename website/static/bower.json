@@ -1,0 +1,19 @@
+{
+  "name": "dog_project",
+  "homepage": "https://github.com/edantonio505/dog-project",
+  "description": "dog classifier",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "Jquery": "^3.2.1",
+    "bootstrap": "^3.3.7",
+    "dropzone": "^5.1.1"
+  }
+}

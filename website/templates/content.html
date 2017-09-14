@@ -1,0 +1,43 @@
+{% extends "index.html" %}
+{% block content %}
+		
+	<div class="centered">
+		<div class="container">
+			<div id="classified" style="
+				text-align: center;
+				font-family: 'Pompiere', cursive;
+				color:#db7a6d;
+				width: 700px; margin: 0 auto;">
+				<h1>Dog Breed Classifier</h1>
+			</div>
+			<form action="file-upload" class="dropzone center-horizon" id="my-awesome-dropzone">
+				<div class="dog_display">
+					<div class="dog_display_background"></div>
+					<div
+					id="directions" 
+					 style="
+						text-align: center; 
+						position:relative; 
+						top:-270px; 
+						font-family: 'Pompiere', cursive;
+						color:#777777;
+						min-width: 10px;
+						width:100%;
+						z-index: 200;
+						float:left;
+						">
+						<h3 style="font-size: 30px;" >Upload a picture here to find out dog breed</h3>
+					</div>
+					
+					<div class="loader-container">
+
+						<div class="loader">
+							<img src="static/images/loader.gif">
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+
+{% endblock %}
