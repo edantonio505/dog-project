@@ -1,0 +1,4 @@
+website/static/bower_components/
+website/uploads/
+saved_models/
+*.pyc
