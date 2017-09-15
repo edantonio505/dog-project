@@ -54,16 +54,16 @@ def predict_breed(path):
     speciment = message = dog_breed = ''
 
     if is_dog:
-        dog_breed = Xception_predict_breed(path).replace('_', ' ').title()
+        dog_breed = Xception_predict_breed(path).replace('_', ' ').title().split('.')[1]
         speciment = 'dog'
         
     if not is_dog and is_human == True:
-        dog_breed = Xception_predict_breed(path).replace('_', ' ').title()
+        dog_breed = Xception_predict_breed(path).replace('_', ' ').title().split('.')[1]
         speciment = 'human'
         
     if not is_dog and not is_human:
         message = 'Error! no dog or human found in image.'
-    print ('"speciment": "{}",  "message": "{}", "dog_breed": "{}"'.format(speciment, message, dog_breed.split('.')[1]))
+    print ('"speciment": "{}",  "message": "{}", "dog_breed": "{}"'.format(speciment, message, dog_breed))
 
 
 
